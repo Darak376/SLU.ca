@@ -1,0 +1,199 @@
+.contact {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side img {
+  width: 650px;
+  height: 650px;
+  object-fit: cover;
+  box-shadow: 12px 12px 12px grey;
+}
+
+.right-side {
+  flex: 1;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side h1 {
+  color: #c90000;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 450px;
+}
+
+form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid rgb(241, 158, 158);
+  border-radius: 5px;
+  background-color: rgb(235, 125, 125);
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.get-quote {
+  padding: 10px;
+  background-color: #c90000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 12px 12px 12px grey;
+}
+
+.get-quote:hover {
+  background-color: black;
+  color: #c90000;
+  box-shadow: 0px 0px 0px #fff;
+}
+
+.submitted-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tick-mark {
+  width: 100px;
+  height: 100px;
+}
+
+h2 {
+  color: #c90000;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 12px 12px 12px grey;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+  color: white;
+  box-shadow: 0px 0px 0px #fff;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .left-side img,
+  form {
+    width: 100%;
+  }
+}
+
+.hover-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.hover-screen-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tick-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.okay-button {
+  background-color: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.okay-button:hover {
+  background-color: #c90000;
+}
+
+.number-input button {
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.number-input button:hover {
+  background-color: #c90000;
+}
+
+.load-type-buttons button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 5px;
+  border: 2px solid lightcoral;
+  border-radius: 5px;
+}
+
+.load-type-buttons button.active {
+  background-color: #c90000;
+  color: white;
+}

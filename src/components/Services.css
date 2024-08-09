@@ -1,0 +1,117 @@
+.services {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #c90000;
+}
+
+.services p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+  width: 30%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+
+  .services-list ul {
+    width: 100%; /* Full width on mobile */
+    margin: 0.5rem 0;
+  }
+
+  .services-list ul li {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .services-list li .tooltip {
+    width: 150px; /* Adjust tooltip width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .services h1 {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+
+  .services p {
+    font-size: 0.9rem;
+  }
+
+  .services-list ul {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .services-list ul li {
+    font-size: 0.9rem; /* Adjust font size for very small screens */
+  }
+
+  .services-list li .tooltip {
+    width: 120px; /* Further adjust tooltip width */
+  }
+}
+
+.services-list ul li {
+  font-weight: bold;
+  padding: 0.5rem 0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.services-list ul li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: #c90000;
+  display: inline-block;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.services-list li .tooltip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  z-index: 10;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-list li:hover .tooltip {
+  display: block;
+}

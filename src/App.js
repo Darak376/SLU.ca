@@ -1,4 +1,5 @@
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Homepage from "./Homepage";
 import "./App.css";
 import Services from "./components/Services";
@@ -11,6 +12,7 @@ import Carousel from "./components/Carousel";
 function App() {
   return (
     <div className="App">
+    <SpeedInsights />
       <Homepage />
       <About />
       <Services />

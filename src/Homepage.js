@@ -58,7 +58,7 @@ const Homepage = () => {
       <div className="buttons">
         <button
           className="get-started"
-          onClick={() => handleButtonClick("services")}
+          onClick={() => handleButtonClick("contact")}
         >
           Get Started
         </button>

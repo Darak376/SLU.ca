@@ -1,0 +1,192 @@
+.careers-form {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.71rem; /* Reduced by 3% from the previously reduced value */
+  text-align: center; /* Center content on the right */
+}
+
+.right h1,
+.right p {
+  width: 85.5%; /* Reduced by 3% from the previously reduced value */
+  max-width: 345px; /* Reduced by 3% from the previously reduced value */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 0.85rem; /* Reduced by 3% from the previously reduced value */
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.form-content {
+  width: 85.5%; /* Reduced by 3% from the previously reduced value */
+  max-width: 345px; /* Reduced by 3% from the previously reduced value */
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 0.85rem; /* Reduced by 3% from the previously reduced value */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.43rem; /* Reduced by 3% from the previously reduced value */
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 0.43rem; /* Reduced by 3% from the previously reduced value */
+  border-radius: 17.12px; /* Reduced by 3% from the previously reduced value */
+  border: 1.71px solid red; /* Reduced by 3% from the previously reduced value */
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: darkred;
+}
+
+.form-submit {
+  padding: 0.65rem 1.71rem; /* Reduced by 3% from the previously reduced value */
+  border-radius: 17.12px; /* Reduced by 3% from the previously reduced value */
+  border: 1.71px solid red; /* Reduced by 3% from the previously reduced value */
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #c90000;
+  border-color: #c90000;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.43rem; /* Reduced by 3% from the previously reduced value */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.divider {
+  margin: 0.85rem 0; /* Reduced by 3% from the previously reduced value */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 0.85px solid #000; /* Reduced by 3% from the previously reduced value */
+}
+
+.divider::before {
+  margin-right: 0.85rem; /* Reduced by 3% from the previously reduced value */
+}
+
+.divider::after {
+  margin-left: 0.85rem; /* Reduced by 3% from the previously reduced value */
+}
+
+.form-email {
+  font-size: 0.85rem; /* Reduced by 3% from the previously reduced value */
+  color: #333;
+}
+
+.availability-container {
+  display: flex;
+  gap: 8.56px; /* Reduced by 3% from the previously reduced value */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 17.56px; /* Reduced by 3% from the previously reduced value */
+}
+
+.availability-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34.26px; /* Reduced by 3% from the previously reduced value */
+  height: 34.26px; /* Reduced by 3% from the previously reduced value */
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.availability-box.selected {
+  background-color: #c90000;
+  color: white;
+}
+
+.availability-box input {
+  display: none;
+}
+
+/* Confirmation Screen Styles */
+.confirmation-screen {
+  position: fixed; /* Make it stay on top of everything */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it is on top of other content */
+}
+
+.confirmation-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.tick-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.okay-button {
+  background-color: #c90000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.okay-button:hover {
+  background-color: #a70000;
+}

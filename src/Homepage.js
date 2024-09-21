@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Homepage.css";
 import "./navbar.css";
 
@@ -39,6 +40,11 @@ const Homepage = () => {
             <a href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
             </a>
+          </li>
+          <li>
+            <Link to="/careers" onClick={() => setMenuOpen(false)}>
+              Careers
+            </Link>
           </li>
         </ul>
         <div className="hamburger" onClick={toggleMenu}>

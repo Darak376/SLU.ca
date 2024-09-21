@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Contact1 from "./components/Contact1";
 import Footer from "./components/Footer";
 import Careers from "./forms/Careers";
+import Testimonials from "./components/testimonials";
 import "./App.css";
 
 function App() {
@@ -31,6 +32,7 @@ function MainPage() {
       <About />
       <Services />
       <Carousel />
+      <Testimonials />
       <Contact />
       <Contact1 />
       <Footer />

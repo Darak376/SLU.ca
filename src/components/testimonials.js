@@ -11,7 +11,7 @@ const testimonials = [
     text: "SLU provided exceptional service and was quick to deliver!",
   },
   {
-    name: "Jane Smith",
+    name: "Marcus Lim",
     text: "Highly recommend SLU for forklift and lumping services. They are professional and efficient.",
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     text: "Great service with a smile! SLU is my go-to for lumping and forklift services.",
   },
   {
-    name: "Chris Evans",
+    name: "Mei Patel",
     text: "Fast, reliable, and trustworthy. SLU exceeded my expectations.",
   },
   {
@@ -35,7 +35,7 @@ const testimonials = [
     text: "SLU made our operation smooth and hassle-free. Highly recommend their lumper and forklift services!",
   },
   {
-    name: "Sarah Lee",
+    name: "Ryan Tan",
     text: "Amazing customer service and speedy operations from SLU!",
   },
 ];
